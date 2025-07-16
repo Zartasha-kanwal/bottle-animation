@@ -119,7 +119,7 @@ export default function Animation() {
             trigger: ".section-1",
             start: "top top",
             end: "bottom top",
-            scrub: 0.3,
+            scrub: 0.2,
           },
         });
 
@@ -139,32 +139,32 @@ export default function Animation() {
             trigger: ".second",
             start: "top center",
             end: "center center",
-            scrub: 0.3,
+            scrub:  0.2,
           },
         });
 
         // Stage 3: Drop into center of .third
         gsap.to(".bottle", {
-          x: 300, // Adjust this if needed to perfectly land
+          x: 300, 
           ease: "power2.out",
           scrollTrigger: {
             trigger: ".third-triger",
             start: "top bottom", // starts animation when .third enters
             end: "top top", // ends when top of .third reaches center
-            scrub: 0.3,
+            scrub:  0.2,
           },
         });
 
         // Stage 4: Drop into center of .third
         gsap.to(".bottle", {
-          x: -500,
+          x: -450,
           rotate: 20,
           ease: "power2.out",
           scrollTrigger: {
             trigger: ".fourth-triger",
             start: "top bottom",
             end: "bottom top",
-            scrub: 0.3,
+            scrub:  0.2,
           },
         });
       },
@@ -460,7 +460,7 @@ export default function Animation() {
       <section className="bg-[#B9D9EB] lg:px-[6rem] px-5 lg:py-[15rem] h-screen ">
         <div className="fourth-triger bg-[#B9D9EB] grid lg:grid-cols-2 grid-cols-1 p-10">
           <div className="bottle end-triger h-80 lg:h-fit w-full text-transparent lg:flex hidden">
-            g
+           
           </div>
 
           <div className="flex lg:flex-row flex-col gap-5">
